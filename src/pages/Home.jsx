@@ -6,7 +6,7 @@ export default function Home() {
             <div className="home-page-container">
                 <h1>You got the travel plans, we got the travel vans.</h1>
                 <p>Add adventure to your life by joining the #navity movement. Rent the perfect van to make your perfect road trip.</p>
-                <a href="#">Find your van</a>
+                <Link to="/vans">Find your van</Link>
             </div>
         </div>
     )
