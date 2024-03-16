@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import aboutImage from "../../public/about--page.png"
 
 export default function About() {
@@ -17,7 +18,7 @@ export default function About() {
                 <div className="about-cta">
                     <h3>Your destination is waiting.</h3>
                     <h3>Your van is ready.</h3>
-                    <a href="#">Explore our vans</a>
+                    <Link to="/vans">Explore our vans</Link>
                 </div>
             </div>
         </div>
