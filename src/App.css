@@ -65,6 +65,16 @@ a {
   color: #AAAAAA;
 }
 
+.outlet-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 2em 0;
+  justify-content: center;
+  width: 800px;
+  margin: auto;
+}
+
 .home-page {
   background-image: url("/public//background--hero.png");
   background-size: cover;
@@ -74,13 +84,7 @@ a {
 }
 
 .home-page-container {
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-  padding: 2em 0;
-  justify-content: center;
-  width: 800px;
-  margin: auto;
+ 
 }
 
 .home-page h1 {
@@ -197,4 +201,26 @@ a {
   width: 30%;
   text-align: center;
   margin-top: 1em;
+}
+
+.vans-page {
+  height: 100%;
+  display: flex;
+  gap: 2em;
+  padding: 2em 0;
+  flex-direction: column;
+  border: 1px solid black;
+}
+
+.van-elements {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+
+.van-item {
+width: 47%;
+display: flex;
+flex-direction: column;
 }
