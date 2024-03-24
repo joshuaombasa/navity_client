@@ -1,10 +1,10 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 export default function Header() {
     return (
         <div className="header-container">
-            <a href="#" className="logo">navity</a>
+            <Link to='/' className="logo">navity</Link>
             <div className="nav-links">
                 <NavLink to="about">About</NavLink>
                 <NavLink to="vans">Vans</NavLink>
