@@ -5,6 +5,8 @@ import './App.css'
 import Layout from './components/Layout'
 import About from './pages/About'
 import Home from './pages/Home'
+import NotFound from './pages/NotFound'
+import Vans from './pages/Vans'
 
 function App() {
 
@@ -16,6 +18,9 @@ function App() {
           <Route path='/' element={<Layout />}>
             <Route index element={<Home />} />
             <Route path='about' element={<About />} />
+            <Route path='vans' element={<Vans />} />
+            <Route path='about' element={<About />} />
+            <Route path='*' element={<NotFound/>}/>
           </Route>
         </Routes>
       </BrowserRouter>
