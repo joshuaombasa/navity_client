@@ -8,14 +8,20 @@ export default function SelectedVan() {
 
 
     return (
-        <div className="selected-van">
-            <Link>&larr; Back to all vans</Link>
-            <img src={aboutImage} alt="" />
-            <span>{vanOption.type}</span>
-            <h3>{vanOption.name}</h3>
-            <h3>${vanOption.price}/day</h3>
-            <p>{vanOption.description}</p>
-            <Link>Rent this van</Link>
+        <div className="selected-van-page">
+            <div className="selected-van-page-container">
+                <Link 
+                    className="back-link"
+                    to=".."
+                    relative="path"
+                ><span>&larr;</span> Back to all vans</Link>
+                <img src={aboutImage} alt="" />
+                <span>{vanOption.type}</span>
+                <h1>{vanOption.name}</h1>
+                <h3>${vanOption.price}/day</h3>
+                <p>{vanOption.description}</p>
+                <Link className="rent-van-link">Rent this van</Link>
+            </div>
         </div>
     )
 }
