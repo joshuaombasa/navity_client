@@ -11,20 +11,22 @@ export default function Vans() {
 
     return (
         <div className="vans-page">
-            <h1>Explore our van options.</h1>
-            <div className="vans-page-nav">
-                <button onClick={generateSearchParams}>Simple</button>
-                <button onClick={generateSearchParams}>Luxury</button>
-                <button onClick={generateSearchParams}>Rugged</button>
-                <button onClick={generateSearchParams}>Clear filters</button>
-            </div>
-            <div className="van-elements">
-                <VanItem/>
-                <VanItem/>
-                <VanItem/>
-                <VanItem/>
-                <VanItem/>
-                <VanItem/>
+            <div className="vans-page-container">
+                <h1>Explore our van options.</h1>
+                <div className="vans-page-nav">
+                    <button onClick={generateSearchParams}>Simple</button>
+                    <button onClick={generateSearchParams}>Luxury</button>
+                    <button onClick={generateSearchParams}>Rugged</button>
+                    <button onClick={generateSearchParams}>Clear filters</button>
+                </div>
+                <div className="van-elements">
+                    <VanItem />
+                    <VanItem />
+                    <VanItem />
+                    <VanItem />
+                    <VanItem />
+                    <VanItem />
+                </div>
             </div>
         </div>
     )
