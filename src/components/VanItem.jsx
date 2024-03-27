@@ -11,8 +11,8 @@ export default function VanItem() {
             <div className="van-item-info">
                 <h3>{vanOption.name}</h3>
                 <h3>${vanOption.price}/day</h3>
-                <span>{vanOption.type}</span>
             </div>
+            <span>{vanOption.type}</span>
         </Link>
     )
 }
