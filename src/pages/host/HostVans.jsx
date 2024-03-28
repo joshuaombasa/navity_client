@@ -7,29 +7,33 @@ export default function HostVans() {
 
 
     return (
-        <div className="">
-            <h1>Host Vans</h1>
-            <Link to={vanOption.id} className="van-item">
-                <img src={aboutImage} alt="" />
-                <div className="host-van-item-info">
-                    <h3>{vanOption.name}</h3>
-                    <h4>${vanOption.price}/day</h4>
+        <div className="host-vans-page">
+            <div className="host-vans-container">
+                <h1>Your listed vans</h1>
+                <div className="host-vans-items">
+                    <Link to={vanOption.id} className="van-item">
+                        <img src={aboutImage} alt="" />
+                        <div className="host-van-item-info">
+                            <h3>{vanOption.name}</h3>
+                            <h4>${vanOption.price}/day</h4>
+                        </div>
+                    </Link>
+                    <Link to={vanOption.id} className="van-item">
+                        <img src={aboutImage} alt="" />
+                        <div className="host-van-item-info">
+                            <h3>{vanOption.name}</h3>
+                            <h4>${vanOption.price}/day</h4>
+                        </div>
+                    </Link>
+                    <Link to={vanOption.id} className="van-item">
+                        <img src={aboutImage} alt="" />
+                        <div className="host-van-item-info">
+                            <h3>{vanOption.name}</h3>
+                            <h4>${vanOption.price}/day</h4>
+                        </div>
+                    </Link>
                 </div>
-            </Link>
-            <Link to={vanOption.id} className="van-item">
-                <img src={aboutImage} alt="" />
-                <div className="host-van-item-info">
-                    <h3>{vanOption.name}</h3>
-                    <h4>${vanOption.price}/day</h4>
-                </div>
-            </Link>
-            <Link to={vanOption.id} className="van-item">
-                <img src={aboutImage} alt="" />
-                <div className="host-van-item-info">
-                    <h3>{vanOption.name}</h3>
-                    <h4>${vanOption.price}/day</h4>
-                </div>
-            </Link>
+            </div>
         </div>
     )
 }
