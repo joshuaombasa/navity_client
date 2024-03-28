@@ -2,6 +2,11 @@ body {
   margin: 0;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   background-color: #FFF7ED;
+  overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 .header-container {
@@ -346,4 +351,215 @@ h4 {
   background-color: #FF8C38;
   padding: 8px;
   border-radius: 5px;
+}
+
+.host-dashboard {
+  min-height: 81.5vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.host-dashboard-container {
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  margin: 2em auto;
+}
+
+.host-dashboard-container nav {
+  display: flex;
+  gap: 4em;
+}
+
+.host-dashboard-container nav a {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22.92px;
+  text-align: left;
+  color: #4D4D4D;
+}
+
+/* .host-vans {
+  display: flex;
+  flex-direction: column;
+} */
+
+.host-vans-container {
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  margin: auto;
+  min-height: 50vh;
+}
+
+.host-vans-container h1 {
+  font-family: Inter;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 33.65px;
+  text-align: left;
+
+}
+
+.host-vans-items {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+
+.host-vans-items .van-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2em;
+  background-color: white;
+  padding: 2em;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.host-vans-items .van-item img {
+  width: 150px;
+}
+
+.host-vans-items .van-item h3 {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 31.66px;
+  text-align: left;
+  color: #161616;
+
+}
+
+.host-vans-items .van-item h4 {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 31.66px;
+  text-align: left;
+  color: #4D4D4D;
+}
+
+.reviews-page,
+.income-page,
+.dashboard-page,
+.host-vans-page,
+.selected-host-van {
+  /* width: 800px; */
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  margin: 2em auto;
+}
+
+.reviews-page-container,
+.income-page-container,
+.dashboard-page-container,
+.selected-host-van-container {
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  margin: 1em auto;
+}
+
+.selected-host-van-container {
+  background-color: white;
+  padding: 2em;
+  border-radius: 5px;
+}
+
+.selected-host-van-display {
+  display: flex;
+  align-items: center;
+  gap: 4em;
+}
+
+.selected-host-van-display img {
+  width: 50%;
+  border-radius: 5px;
+}
+
+.selected-host-van-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1em;
+}
+
+.selected-host-van-info span {
+  font-family: Inter;
+  font-size: 18;
+  font-weight: 600;
+  line-height: 25.78px;
+  text-align: center;
+  color: #FFEAD0;
+  background: #E17654;
+  padding: 6px 40px;
+  border-radius: 5px;
+}
+
+.selected-host-van-info h3 {
+  font-family: Inter;
+  font-size: 26.06px;
+  font-weight: 700;
+  line-height: 27.4px;
+  text-align: left;
+  color: #161616;
+}
+
+.h4 {
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 35.95px;
+  text-align: left;
+  color: #161616;
+}
+
+.selected-host-van-nav {
+  font-family: Inter;
+  font-size: 16.15px;
+  font-weight: 500;
+  line-height: 20.57px;
+  text-align: left;
+  color: #4D4D4D;
+  display: flex;
+  gap: 3em;
+}
+
+.selected-host-pricing {
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 21.46px;
+  text-align: left;
+  color: #161616;
+}
+
+.selected-host-pricing p {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21.46px;
+  text-align: left;
+  color: #4D4D4D;
+}
+
+.selected-host-details strong {
+  font-family: Inter;
+  font-size: 14.35px;
+  font-weight: 700;
+  line-height: 21.46px;
+  text-align: left;
+  color: #161616;
+}
+
+.selected-host-photos img {
+  width: 300px;
 }
