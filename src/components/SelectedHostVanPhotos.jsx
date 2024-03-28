@@ -1,9 +1,10 @@
 import React from "react";
+import aboutImage from "../../public/about--page.png"
 
 export default function SelectedHostVanPhotos() {
     return (
         <div className="selected-host-photos">
-            <h1>selected host van Photos</h1>
+            <img src={aboutImage} alt="" />
         </div>
     )
 }
