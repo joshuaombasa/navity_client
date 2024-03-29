@@ -446,10 +446,12 @@ h4 {
 }
 
 .reviews-page,
+.login-page,
 .income-page,
 .dashboard-page,
 .host-vans-page,
-.selected-host-van {
+.selected-host-van,
+.notfound-page {
   /* width: 800px; */
   display: flex;
   flex-direction: column;
@@ -460,7 +462,9 @@ h4 {
 .reviews-page-container,
 .income-page-container,
 .dashboard-page-container,
-.selected-host-van-container {
+.selected-host-van-container,
+.login-page-container,
+.notfound-page-container {
   width: 800px;
   display: flex;
   flex-direction: column;
@@ -562,4 +566,116 @@ h4 {
 
 .selected-host-photos img {
   width: 300px;
+}
+
+.login-page-container {
+  margin: auto;
+}
+
+.login-page {
+  min-height: 81.5vh;
+}
+
+
+.login-page-container h1 {
+  font-family: Inter;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  color: #161616;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+
+.login-inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-inputs input {
+  padding: 13px;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #4D4D4D;
+  border: 1px solid #4D4D4D;
+  outline: unset;
+}
+
+.login-inputs .email {
+  border-radius: 6px 6px 0 0;
+  border-bottom: none;
+}
+
+.login-inputs .password {
+  border-radius: 0 0 6px 6px;
+}
+
+.login-form button {
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: left;
+  color: #FFFFFF;
+  border-radius: 6px;
+  background: #FF8C38;
+  border: none;
+  padding: 13px 0;
+  text-align: center;
+}
+
+.login-form span {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  color: #161616;
+}
+
+.login-form .create-account-link {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  color: #FF8C38;
+}
+
+.notfound-page {
+  min-height: 81.2vh;
+}
+
+.notfound-page-container {
+  margin: auto;
+}
+
+.notfound-page-container h1 {
+  font-family: Inter;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 42px;
+  text-align: left;
+  color: #161616;
+}
+
+.notfound-page-container a {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 31.66px;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #161616;
+  border-radius: 5px;
+  padding: 10px 0;
 }
